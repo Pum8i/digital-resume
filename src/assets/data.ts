@@ -171,7 +171,7 @@ export const resumeData = {
     },
 
     {
-      company: "P2 Energy Solutions, Calgary",
+      company: "IFS (formerly P2 Energy Solutions), Calgary",
       id: "p2",
       period: "06/2011 – 02/2018",
       title: "Software Developer",
@@ -204,7 +204,7 @@ export const resumeData = {
     "ATB Quarterly Award for Excellence",
     "P2 Energy Solutions Employee Recognition",
   ],
-  links: [{ url: "https://github.com/Pum8i", label: "GitHub" }],
+  links: [{ url: "https://pumbi.dev", label: "Portfolio" }, { url: "https://github.com/Pum8i", label: "GitHub" }],
   sideOptions: {
     description:
       "A simple implementation of my resume to help demonstrate some of my React skills.",
