@@ -1,7 +1,7 @@
 export const resumeData = {
   name: "Andy Pumbien",
   title: "Senior Fullstack Software Developer",
-  email: "apumbien@gmail.com",
+  email: "andy@pumbi.dev",
   phone: "(403) 399-9289",
   location: "Courtenay, BC",
   linkedIn: "https://www.linkedin.com/in/andy-pumbien",
@@ -31,6 +31,15 @@ export const resumeData = {
         { name: "Android", companies: ["atb"] },
         { name: "Express", companies: ["atb"] },
         { name: "Spring Boot", companies: ["atb"] },
+      ],
+    },
+    {
+      grouping: "libraries",
+      title: "Libraries",
+      skills: [
+        { name: "Mui", companies: ["atb", "han"] },
+        { name: "Redux", companies: ["atb", "han"] },
+        { name: "Tailwind CSS", companies: [] },
       ],
     },
     {
@@ -114,6 +123,7 @@ export const resumeData = {
       label: "Other",
       skills: [
         { name: "Copilot", companies: ["han"] },
+        { name: "GitHub Actions", companies: ["han"] },
         { name: "Jira / Confluence", companies: ["atb", "han"] },
         { name: "Docusign", companies: ["atb"] },
         { name: "Box", companies: ["atb"] },
