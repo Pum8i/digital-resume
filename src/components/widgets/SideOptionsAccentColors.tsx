@@ -69,13 +69,13 @@ export default function SideOptionsAccentColors({
           Accent Color
         </Typography>
         <Typography variant="body1" paragraph>
-          Pick your favourite accent color
+          Pick your favorite accent color
         </Typography>
       </FormLabel>
 
       <ToggleButtonGroup
         size="small"
-        aria-label="Accent colour toggle group"
+        aria-label="Accent color toggle group"
         exclusive
         value={accentColor}
         onChange={handleAlignment}

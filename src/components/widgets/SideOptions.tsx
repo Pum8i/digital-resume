@@ -28,7 +28,7 @@ const drawerBleeding = 48;
 export default function SideOptions({ resumeData }: { resumeData: IData }) {
   const theme = useTheme();
   const { accentColor } = useAccentContext();
-  const { isSmallScreen } = useDeviceSize();
+  const { isSmallScreen, isMediumScreen } = useDeviceSize();
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen: boolean) => () => {
@@ -42,7 +42,7 @@ export default function SideOptions({ resumeData }: { resumeData: IData }) {
         styles={{
           ".MuiDrawer-root > .MuiPaper-root": {
             maxWidth: `calc(${
-              isSmallScreen ? "75%" : "50%"
+              isSmallScreen ? "90%" : isMediumScreen ? "605px" : ""
             } - ${drawerBleeding}px)`,
             overflow: "visible",
           },

@@ -4,5 +4,8 @@ export const useDeviceSize = () => {
   const isSmallScreen = useMediaQuery((theme: { breakpoints: Breakpoints }) =>
     theme.breakpoints.down("sm")
   );
-  return { isSmallScreen };
+  const isMediumScreen = useMediaQuery((theme: { breakpoints: Breakpoints }) =>
+    theme.breakpoints.down("md")
+  );
+  return { isSmallScreen, isMediumScreen };
 };
