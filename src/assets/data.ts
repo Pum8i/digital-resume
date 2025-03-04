@@ -35,7 +35,7 @@ export const resumeData = {
     },
     {
       grouping: "libraries",
-      title: "Libraries",
+      label: "Libraries",
       skills: [
         { name: "Mui", companies: ["atb", "han"] },
         { name: "Redux", companies: ["atb", "han"] },
