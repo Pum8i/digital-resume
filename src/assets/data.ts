@@ -1,7 +1,7 @@
 export const resumeData = {
   name: "Andy Pumbien",
   title: "Senior Fullstack Software Developer",
-  email: "andy@pumbi.dev",
+  email: "apumbien@gmail.com",
   phone: "(403) 399-9289",
   location: "Courtenay, BC",
   linkedIn: "https://www.linkedin.com/in/andy-pumbien",
