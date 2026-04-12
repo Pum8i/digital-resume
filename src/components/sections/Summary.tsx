@@ -9,7 +9,7 @@ export function Summary({ resumeData }: { resumeData: IData }) {
   return (
     <>
       <Section sectionTitle="Professional Summary">
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1" sx={{ mb: 2 }}>
           {resumeData.summary}
         </Typography>
       </Section>

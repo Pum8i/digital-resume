@@ -100,13 +100,13 @@ export default function SideOptions({ resumeData }: { resumeData: IData }) {
             overflow: "auto",
           }}
         >
-          <Stack spacing={3} p={1} height="-webkit-fill-available">
-            <Typography variant="body1" align="center">
+          <Stack spacing={3} sx={{ p: 1, height: "-webkit-fill-available" }}>
+            <Typography variant="body1" sx={{ textAlign: "center" }}>
               {resumeData.sideOptions.description}
             </Typography>
             <Divider />
 
-            <Typography variant="h1" paragraph align="center">
+            <Typography variant="h1" sx={{ mb: 2, textAlign: "center" }}>
               Formatting Options
             </Typography>
             <SideOptionsAccentColors isSmallScreen={isSmallScreen} />

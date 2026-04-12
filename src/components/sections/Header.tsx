@@ -1,5 +1,5 @@
 import { Link, Typography } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2/Grid2";
+import Grid from "@mui/material/Grid";
 import { useDeviceSize } from "src/hooks/DeviceSizeHooks";
 import CornerIcon from "src/assets/CornerIcon";
 
@@ -16,22 +16,22 @@ function Header({ resumeData }: { resumeData: IData }) {
   const { isSmallScreen } = useDeviceSize();
   const { name, title, email, phone, location, linkedIn } = resumeData;
   return (
-    <Grid container direction="row" justifyContent="space-between">
+    <Grid container sx={{ flexDirection: "row", justifyContent: "space-between" }}>
       <Grid>
-        <Typography variant="h1" align="left">
+        <Typography variant="h1" sx={{ textAlign: "left" }}>
           {name}
         </Typography>
-        <Typography variant="h2" align="left">
+        <Typography variant="h2" sx={{ textAlign: "left" }}>
           {title}
         </Typography>
-        <Typography variant="body1" align="left">
+        <Typography variant="body1" sx={{ textAlign: "left" }}>
           <Link href={`mailto:${email}`} target="_blank" rel="noreferrer">
             {email}
           </Link>
           {" | " + phone + " | " + location}
         </Typography>
 
-        <Typography variant="body1" align="left" gutterBottom>
+        <Typography variant="body1" sx={{ textAlign: "left" }} gutterBottom>
           <Link href={linkedIn} target="_blank" rel="noreferrer">
             {linkedIn}
           </Link>

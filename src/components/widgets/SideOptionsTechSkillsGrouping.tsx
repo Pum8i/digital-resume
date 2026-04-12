@@ -37,10 +37,10 @@ export default function SideOptionsTechSkillsGrouping({
   return (
     <FormControl fullWidth margin="normal" sx={{ alignItems: "center" }}>
       <FormLabel id="tech-skills-toggle-group-label">
-        <Typography align="center" fontWeight="bold">
+        <Typography sx={{ textAlign: "center", fontWeight: "bold" }}>
           Technical Skills
         </Typography>
-        <Typography variant="body1" gutterBottom align="justify" pt={2}>
+        <Typography variant="body1" gutterBottom sx={{ textAlign: "justify", pt: 2 }}>
           List technical skills as one big list or group them by technology.
         </Typography>
       </FormLabel>
@@ -58,7 +58,7 @@ export default function SideOptionsTechSkillsGrouping({
       </ToggleButtonGroup>
 
       <FormLabel id="tech-skills-toggle-group-label">
-        <Typography variant="body1" gutterBottom align="justify" pt={2}>
+        <Typography variant="body1" gutterBottom sx={{ textAlign: "justify", pt: 2 }}>
           Show list of technical skills used at each company.
         </Typography>
       </FormLabel>

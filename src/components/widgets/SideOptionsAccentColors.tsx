@@ -39,10 +39,7 @@ export default function SideOptionsAccentColors({
     return (
       <ToggleButton value={accentColor}>
         <Stack
-          direction="row"
-          justifyContent={"flex-start"}
-          alignItems="center"
-          sx={{ width: "100%" }}
+          sx={{ flexDirection: "row", justifyContent: "flex-start", alignItems: "center", width: "100%" }}
         >
           <Box
             sx={{
@@ -65,10 +62,10 @@ export default function SideOptionsAccentColors({
   return (
     <FormControl fullWidth margin="normal" sx={{ alignItems: "center" }}>
       <FormLabel id="accent-color-toggle-group-label">
-        <Typography align="center" fontWeight="bold">
+        <Typography sx={{ textAlign: "center", fontWeight: "bold" }}>
           Accent Color
         </Typography>
-        <Typography variant="body1" paragraph>
+        <Typography variant="body1" sx={{ mb: 2 }}>
           Pick your favorite accent color
         </Typography>
       </FormLabel>

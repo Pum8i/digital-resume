@@ -22,22 +22,24 @@ export function TechnicalSkills({ resumeData }: { resumeData: IData }) {
   return (
     <Section sectionTitle="Technical Skills" pb={isSkillGroupingNone ? 0 : 1}>
       {isSkillGroupingNone ? (
-        <Typography variant="body1" paragraph align="center">
+        <Typography variant="body1" sx={{ mb: 2, textAlign: "center" }}>
           {skills.join(" | ")}
         </Typography>
       ) : (
         resumeData.techSkills.map((ts) => {
           return (
             <Stack
-              direction={{ sm: "column", md: "row" }}
+              sx={{
+                flexDirection: { sm: "column", md: "row" },
+                alignItems: isSmallScreen ? "flex-start" : "center",
+                pb: 1
+              }}
               spacing={{ md: 2 }}
-              alignItems={isSmallScreen ? "flex-start" : "center"}
-              pb={1}
               key={ts.grouping}
             >
               <Typography
                 variant="body1"
-                fontWeight="bold"
+                sx={{ fontWeight: "bold" }}
               >{`${ts.label}:`}</Typography>
               <Typography variant="body1">
                 {ts.skills.map((s) => s.name).join(" | ")}

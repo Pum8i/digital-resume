@@ -13,7 +13,7 @@ export default function Links({ resumeData }: { resumeData: IData }) {
           const { url, label } = link;
           return (
             <li key={url}>
-              <Link href={url} align="left" target="_blank" rel="noreferrer">
+              <Link href={url} sx={{ textAlign: "left" }} target="_blank" rel="noreferrer">
                 {label}
               </Link>
             </li>

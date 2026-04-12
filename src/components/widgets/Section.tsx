@@ -10,8 +10,8 @@ interface IData {
 
 export default function Section({ sectionTitle, children, pb, pt }: IData) {
   return (
-    <Box pb={pb} pt={pt}>
-      <Typography variant="h3" textAlign={"left"}>
+    <Box sx={{ pb, pt }}>
+      <Typography variant="h3" sx={{ textAlign: "left" }}>
         {sectionTitle}
       </Typography>
       <Divider variant="fullWidth" sx={{ mb: 1, bgcolor: "black" }} />

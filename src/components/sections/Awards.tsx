@@ -10,7 +10,7 @@ export default function Awards({ resumeData }: { resumeData: IData }) {
     <Section sectionTitle="Awards" pt={1}>
       {resumeData.awards.map((award) => {
         return (
-          <Typography variant="body1" align="left" key={award}>
+          <Typography variant="body1" sx={{ textAlign: "left" }} key={award}>
             {award}
           </Typography>
         );

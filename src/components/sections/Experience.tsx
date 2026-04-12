@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2";
+import Grid from "@mui/material/Grid";
 import { useAccentContext } from "src/hooks/ContextHooks";
 
 interface IData {
@@ -21,12 +21,12 @@ export function Experience({
   return (
     <>
       <Typography variant="h4" sx={{ backgroundColor: "#efefef" }}>
-        <Grid container direction="row" justifyContent="space-between">
+        <Grid container sx={{ flexDirection: "row", justifyContent: "space-between" }}>
           <Grid>{company}</Grid>
-          <Grid pr={1}>{period}</Grid>
+          <Grid sx={{ pr: 1 }}>{period}</Grid>
         </Grid>
       </Typography>
-      <Typography variant="h5" align="left">
+      <Typography variant="h5" sx={{ textAlign: "left" }}>
         {title}
       </Typography>
       <ul>
@@ -38,12 +38,10 @@ export function Experience({
         <>
           <Typography
             variant="body1"
-            align="justify"
-            pb={2}
-            px={2}
+            sx={{ textAlign: "justify", pb: 2, px: 2 }}
             component="div"
           >
-            <Box fontWeight="bold" color={accentColor} display="inline" pr={1}>
+            <Box sx={{ fontWeight: "bold", color: accentColor, display: "inline", pr: 1 }}>
               Technology Used:
             </Box>
             {techSkills.join(" | ")}

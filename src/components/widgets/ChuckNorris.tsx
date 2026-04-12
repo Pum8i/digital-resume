@@ -34,7 +34,7 @@ export default function ChuckNorris() {
 
   return (
     <Paper>
-      <Stack direction="row" p={1} spacing={1} alignItems="center">
+      <Stack sx={{ flexDirection: "row", p: 1, alignItems: "center" }} spacing={1}>
         <img src={chuck.icon_url} />
         <Typography variant="body1" sx={{ maxWidth: "500px" }}>
           {chuck.value}

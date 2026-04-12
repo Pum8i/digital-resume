@@ -31,7 +31,7 @@ export const defaultTheme = (accent: string | undefined) => {
   let theme = createTheme({
     palette: {
       accents: {
-        main: "primary",
+        main: "#1976d2",
         blue: "#1f3864",
         brown: "#954535",
         burgundy: "#800020",
