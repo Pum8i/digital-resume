@@ -1,5 +1,6 @@
 import { Global } from "@emotion/react";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import PrintIcon from "@mui/icons-material/Print";
 import {
   Box,
   Divider,
@@ -7,6 +8,7 @@ import {
   IconButton,
   Stack,
   Typography,
+  Button
 } from "@mui/material";
 import CssBaseline from "@mui/material/CssBaseline";
 import { useTheme } from "@mui/material/styles";
@@ -112,6 +114,22 @@ export default function SideOptions({ resumeData }: { resumeData: IData }) {
             <SideOptionsAccentColors isSmallScreen={isSmallScreen} />
             <Divider />
             <SideOptionsTechSkillsGrouping isSmallScreen={isSmallScreen} />
+            <Divider />
+            <Button
+              variant="contained"
+              startIcon={<PrintIcon />}
+              onClick={() => window.print()}
+              sx={{
+                mb: 2,
+                alignSelf: "center",
+                backgroundColor: accentColor,
+                "&:hover": {
+                  filter: "brightness(0.85)",
+                },
+              }}
+            >
+              Print Resume
+            </Button>
             <Box sx={{ height: "-webkit-fill-available" }}></Box>
             <ChuckNorris />
           </Stack>

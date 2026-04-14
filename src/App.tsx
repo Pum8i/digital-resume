@@ -1,4 +1,4 @@
-import { Box, Container, CssBaseline, Paper } from "@mui/material";
+import { Box, Container, CssBaseline, GlobalStyles, Paper } from "@mui/material";
 import { resumeData } from "src/assets/data";
 import Awards from "./components/sections/Awards";
 import Education from "./components/sections/Education";
@@ -16,10 +16,39 @@ function App() {
   return (
     <>
       <CssBaseline />
+      <GlobalStyles styles={{
+        "@media print": {
+          body: {
+            WebkitPrintColorAdjust: "exact",
+            printColorAdjust: "exact",
+          },
+          ".MuiDrawer-root": {
+            display: "none !important",
+          },
+        }
+      }} />
       <SideOptions resumeData={resumeData} />
-      <Box sx={{ backgroundColor: "ghostwhite" }}>
-        <Container maxWidth="md" sx={{ p: 2 }}>
-          <Paper sx={{ p: isSmallScreen ? 4 : 8 }}>
+      <Box sx={{
+        backgroundColor: "ghostwhite",
+        "@media print": {
+          backgroundColor: "white",
+        }
+      }}>
+        <Container maxWidth="md" sx={{
+          p: 2,
+          "@media print": {
+            p: 0,
+            mt: 0,
+            maxWidth: "100%",
+          }
+        }}>
+          <Paper sx={{
+            p: isSmallScreen ? 4 : 8,
+            "@media print": {
+              p: 0,
+              boxShadow: "none",
+            }
+          }}>
             <Header resumeData={resumeData} />
             <Summary resumeData={resumeData} />
             <TechnicalSkills resumeData={resumeData} />

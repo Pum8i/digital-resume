@@ -30,8 +30,8 @@ export function TechnicalSkills({ resumeData }: { resumeData: IData }) {
           return (
             <Stack
               sx={{
-                flexDirection: { sm: "column", md: "row" },
-                alignItems: isSmallScreen ? "flex-start" : "center",
+                flexDirection: { xs: "column", md: "row" },
+                alignItems: isSmallScreen ? "flex-start" : "baseline",
                 pb: 1
               }}
               spacing={{ md: 2 }}
@@ -39,7 +39,7 @@ export function TechnicalSkills({ resumeData }: { resumeData: IData }) {
             >
               <Typography
                 variant="body1"
-                sx={{ fontWeight: "bold" }}
+                sx={{ fontWeight: "bold", pr: 1 }}
               >{`${ts.label}:`}</Typography>
               <Typography variant="body1">
                 {ts.skills.map((s) => s.name).join(" | ")}
