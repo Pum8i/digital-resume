@@ -6,19 +6,20 @@ export const resumeData = {
   location: "Courtenay, BC",
   linkedIn: "https://www.linkedin.com/in/andy-pumbien",
   summary:
-    "Full-Stack  Software  Developer  with  over  13  years  of  experience  in  designing, building,  and  maintaining  applications  tailored  to  client  needs.  Recognized  for robust  problem-solving  skills  and  adaptability,  with  a  commitment  to  delivering high-standard  code.  Experienced  in  test  automation,  agile  methodologies,  and mentoring team members.",
+    "Full-Stack  Software  Developer  with  over  14  years  of  experience  in  designing, building,  and  maintaining  applications  tailored  to  client  needs.  Recognized  for robust  problem-solving  skills  and  adaptability,  with  a  commitment  to  delivering high-standard  code.  Experienced  in  test  automation,  agile  methodologies,  and mentoring team members.",
   techSkills: [
     {
       grouping: "lang",
       label: "Language",
       skills: [
         { name: "Java", companies: ["p2", "atb", "han"] },
-        { name: "JavaScript", companies: ["p2", "atb", "han"] },
-        { name: "TypeScript", companies: ["han"] },
+        { name: "JavaScript", companies: ["p2", "atb", "han", "ie"] },
+        { name: "TypeScript", companies: ["han", "ie"] },
+        { name: "Golang", companies: ["ie"] },
         { name: "Kotlin", companies: ["atb"] },
         { name: "Python", companies: ["atb"] },
         { name: "C#", companies: ["p2"] },
-        { name: "SQL", companies: ["p2", "atb", "han"] },
+        { name: "SQL", companies: ["p2", "atb", "han", "ie"] },
         { name: "NoSQL", companies: ["atb"] },
         { name: "GraphQL", companies: ["atb"] },
       ],
@@ -27,7 +28,7 @@ export const resumeData = {
       grouping: "framework",
       label: "Frameworks",
       skills: [
-        { name: "React", companies: ["atb", "han"] },
+        { name: "React", companies: ["atb", "han", "ie"] },
         { name: "Android", companies: ["atb"] },
         { name: "Express", companies: ["atb"] },
         { name: "Spring Boot", companies: ["atb"] },
@@ -45,14 +46,14 @@ export const resumeData = {
     {
       grouping: "runtime",
       label: "Runtime Environments",
-      skills: [{ name: "NodeJS", companies: ["atb", "han"] }],
+      skills: [{ name: "NodeJS", companies: ["atb", "han", "ie"] }],
     },
     {
       grouping: "testing",
       label: "Testing",
       skills: [
         { name: "Test Automation", companies: ["atb", "han"] },
-        { name: "Playwright", companies: ["han"] },
+        { name: "Playwright", companies: ["han", "ie"] },
         { name: "Selenium", companies: ["atb"] },
         { name: "pytest", companies: ["atb"] },
       ],
@@ -62,7 +63,7 @@ export const resumeData = {
       label: "Databases",
       skills: [
         { name: "MySQL", companies: ["han"] },
-        { name: "Postgres", companies: ["atb"] },
+        { name: "Postgres", companies: ["atb", "ie"] },
         { name: "Oracle", companies: ["p2"] },
         { name: "MongoDb", companies: ["atb"] },
       ],
@@ -71,7 +72,7 @@ export const resumeData = {
       grouping: "cloud",
       label: "Cloud Services",
       skills: [
-        { name: "AWS", companies: ["atb", "han"] },
+        { name: "AWS", companies: ["atb", "han", "ie"] },
         { name: "GCP", companies: ["atb"] },
         { name: "Firebase", companies: ["atb"] },
       ],
@@ -90,8 +91,9 @@ export const resumeData = {
       grouping: "source",
       label: "Source Control",
       skills: [
-        { name: "GitHub", companies: ["han"] },
-        { name: "Git", companies: ["atb", "han"] },
+        { name: "GitHub", companies: ["han", "ie"] },
+        { name: "Git", companies: ["atb", "han", "ie"] },
+        { name: "Azure DevOps", companies: ["ie"] },
         { name: "GitLab", companies: ["atb"] },
         { name: "Team Foundation Server", companies: ["p2"] },
         { name: "SVN", companies: ["p2"] },
@@ -101,8 +103,8 @@ export const resumeData = {
       grouping: "os",
       label: "Operating Systems",
       skills: [
-        { name: "Windows", companies: ["atb", "han"] },
-        { name: "Linux", companies: ["p2", "atb", "han"] },
+        { name: "Windows", companies: ["atb", "han", "ie"] },
+        { name: "Linux", companies: ["p2", "atb", "han", "ie"] },
         { name: "Mac OS", companies: ["p2", "atb", "han"] },
       ],
     },
@@ -110,11 +112,11 @@ export const resumeData = {
       grouping: "ide",
       label: "IDE's",
       skills: [
-        { name: "VS Code", companies: ["atb", "han"] },
-        { name: "IntelliJ", companies: ["han"] },
+        { name: "VS Code", companies: ["atb", "han", "ie"] },
+        { name: "IntelliJ", companies: ["han", "ie"] },
         { name: "Eclipse", companies: ["p2", "han"] },
         { name: "Visual Studio", companies: ["p2"] },
-        { name: "Android Studio", companies: ["atb", "han"] },
+        { name: "Android Studio", companies: ["atb", "han", "ie"] },
         { name: "PyCharm", companies: ["atb"] },
       ],
     },
@@ -122,6 +124,7 @@ export const resumeData = {
       grouping: "other",
       label: "Other",
       skills: [
+        { name: "Claude Code", companies: ["ie"] },
         { name: "Copilot", companies: ["han"] },
         { name: "GitHub Actions", companies: ["han"] },
         { name: "Jira / Confluence", companies: ["atb", "han"] },
@@ -131,7 +134,7 @@ export const resumeData = {
         { name: "Sonar Cloud", companies: ["atb"] },
         { name: "Redux", companies: ["atb", "han"] },
         { name: "Microservices", companies: ["atb"] },
-        { name: "RESTful APIs", companies: ["atb", "han"] },
+        { name: "RESTful APIs", companies: ["atb", "han", "ie"] },
       ],
     },
   ],
@@ -148,20 +151,33 @@ export const resumeData = {
   ],
   professionalExperience: [
     {
+      company: "Imagine Eveything",
+      id: "ie",
+      period: "10/2025 – Present",
+      title: "Software Developer/Agile Team Lead",
+      duties: [
+        "Acting as a strategic bridge between Product, Creative (UI/UX), and Engineering teams, ensuring technical feasibility and high-fidelity implementation of product requirements.",
+        "Spearheading the implementation and optimization of Agile processes, refining ceremonies and workflows to increase team velocity and remove development blockers.",
+        "Developing and scaling core features for the enterprise Content Management System (CMS), utilizing React for the frontend and Golang for the backend.",
+        "Facilitating the growth and professional development of team members through mentorship, knowledge sharing, and fostering a collaborative learning environment.",
+        "Partnering with UI/UX designers to ensure the seamless translation of complex designs into high-performance web components, maintaining consistency across the suite of educational tools.",
+        "Leading technical delivery for the CMS product, balancing hands-on full-stack development with process improvements and code reviews.",
+        "Facilitating cross-departmental collaboration to align engineering efforts with the unique needs of the K-12 community, focusing on student safety and planning innovations."
+      ]
+    },
+    {
       company: "Transact (formerly Hangry)",
       id: "han",
       period: "08/2021 – 07/2024",
       title: "Senior Full Stack Software Developer",
       duties: [
-        "Designed, implemented, and tested new features for Transact food ordering applications (dashboard and web ordering app), including frontend (React) and backend (Java) development.",
-        "Advocated for implementing test pyramid methodology and led efforts to implement E2E test automation utilizing MS Playwright, resulting in migration of +45% of test cases from manual to automated tests.",
-        "Mentored  new  and  existing  team  members  and  led  agile  ceremonies  to  enhance team productivity.",
-        "Developed a SaaS admin dashboard in React that is used to manage 500K mobile app users and 15m annual transactions.",
-        "Developed a web React version of the mobile ordering application by reviewing the Android app to replicate the functionality.",
-        "Developed and integrated Amazon - Just Walk Out technology, encompassing frontend (React), backend (Java), and AWS components.",
-        "Spearheaded a Proof of Concept for transitioning our web applications from Create React App to Next.js, demonstrating potential performance improvements and streamlined development processes",
-        "Developed and delivered engaging training materials, including how-to guides, best practice documentation and presentations to help enhance team knowledge and drive process improvements.",
-        "Advocated for and championed 10% time for “Freedom Fridays” - a day for personal learning and professional development.",
+        "Acting as a strategic bridge between Product, Creative (UI/UX), and Engineering teams, ensuring technical feasibility and high-fidelity implementation of product requirements.",
+        "Spearheading the implementation and optimization of Agile processes, refining ceremonies and workflows to increase team velocity and remove development blockers.",
+        "Developing and scaling core features for the enterprise Content Management System (CMS), utilizing React for the frontend and Golang for the backend.",
+        "Facilitating the growth and professional development of team members through mentorship, knowledge sharing, and fostering a collaborative learning environment.",
+        "Partnering with UI/UX designers to ensure the seamless translation of complex designs into high-performance web components, maintaining consistency across the suite of educational tools.",
+        "Leading technical delivery for the CMS product, balancing hands-on full-stack development with process improvements and code reviews.",
+        "Facilitating cross-departmental collaboration to align engineering efforts with the unique needs of the K-12 community, focusing on student safety and planning innovations."
       ],
     },
     {
@@ -214,7 +230,7 @@ export const resumeData = {
     "ATB Quarterly Award for Excellence",
     "P2 Energy Solutions Employee Recognition",
   ],
-  links: [{ url: "https://pumbi.dev", label: "Portfolio" }, { url: "https://github.com/Pum8i", label: "GitHub" }],
+  links: [{ url: "https://apumbien.vercel.app/", label: "Portfolio" }, { url: "https://github.com/Pum8i", label: "GitHub" }],
   sideOptions: {
     description:
       "A simple implementation of my resume to help demonstrate some of my React skills.",
