@@ -10,9 +10,23 @@ import { Summary } from "./components/sections/Summary";
 import { TechnicalSkills } from "./components/sections/TechnicalSkills";
 import SideOptions from "./components/widgets/SideOptions";
 import { useDeviceSize } from "./hooks/DeviceSizeHooks";
+import { useEffect } from "react";
 
 function App() {
   const { isSmallScreen } = useDeviceSize();
+
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      if (event.origin !== "https://apumbien.vercel.app") return;
+      
+      if (event.data === "trigger-print") {
+        window.print();
+      }
+    };
+    window.addEventListener("message", handleMessage);
+    return () => window.removeEventListener("message", handleMessage);
+  }, []);
+
   return (
     <>
       <CssBaseline />

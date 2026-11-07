@@ -6,7 +6,7 @@ export const resumeData = {
   location: "Courtenay, BC",
   linkedIn: "https://www.linkedin.com/in/andy-pumbien",
   summary:
-    "Full-Stack  Software  Developer  with  over  14  years  of  experience  in  designing, building,  and  maintaining  applications  tailored  to  client  needs.  Recognized  for robust  problem-solving  skills  and  adaptability,  with  a  commitment  to  delivering high-standard  code.  Experienced  in  test  automation,  agile  methodologies,  and mentoring team members.",
+    "Full-Stack  Software  Developer  with  over  15  years  of  experience  in  designing, building,  and  maintaining  applications  tailored  to  client  needs.  Recognized  for robust  problem-solving  skills  and  adaptability,  with  a  commitment  to  delivering high-standard  code.  Experienced  in  test  automation,  agile  methodologies,  and mentoring team members.",
   techSkills: [
     {
       grouping: "lang",
@@ -151,7 +151,7 @@ export const resumeData = {
   ],
   professionalExperience: [
     {
-      company: "Imagine Eveything",
+      company: "Imagine Everything",
       id: "ie",
       period: "10/2025 – Present",
       title: "Software Developer/Agile Team Lead",
@@ -162,7 +162,8 @@ export const resumeData = {
         "Facilitating the growth and professional development of team members through mentorship, knowledge sharing, and fostering a collaborative learning environment.",
         "Partnering with UI/UX designers to ensure the seamless translation of complex designs into high-performance web components, maintaining consistency across the suite of educational tools.",
         "Leading technical delivery for the CMS product, balancing hands-on full-stack development with process improvements and code reviews.",
-        "Facilitating cross-departmental collaboration to align engineering efforts with the unique needs of the K-12 community, focusing on student safety and planning innovations."
+        "Facilitating cross-departmental collaboration to align engineering efforts with the unique needs of the K-12 community, focusing on student safety and planning innovations.",
+        "Leveraging AI-assisted development tools to accelerate feature delivery, streamline debugging, and maintain high code quality standards.",
       ]
     },
     {
@@ -232,7 +233,5 @@ export const resumeData = {
   ],
   links: [{ url: "https://apumbien.vercel.app/", label: "Portfolio" }, { url: "https://github.com/Pum8i", label: "GitHub" }],
   sideOptions: {
-    description:
-      "A simple implementation of my resume to help demonstrate some of my React skills.",
   },
 };

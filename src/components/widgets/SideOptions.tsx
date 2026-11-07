@@ -21,7 +21,7 @@ import SideOptionsTechSkillsGrouping from "./SideOptionsTechSkillsGrouping";
 
 interface IData {
   sideOptions: {
-    description: string;
+    description?: string;
   };
 }
 
@@ -103,10 +103,10 @@ export default function SideOptions({ resumeData }: { resumeData: IData }) {
           }}
         >
           <Stack spacing={3} sx={{ p: 1, height: "-webkit-fill-available" }}>
-            <Typography variant="body1" sx={{ textAlign: "center" }}>
+            {resumeData.sideOptions.description && (<><Typography variant="body1" sx={{ textAlign: "center" }}>
               {resumeData.sideOptions.description}
             </Typography>
-            <Divider />
+            <Divider /></>)}
 
             <Typography variant="h1" sx={{ mb: 2, textAlign: "center" }}>
               Formatting Options
