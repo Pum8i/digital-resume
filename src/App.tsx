@@ -17,8 +17,12 @@ function App() {
 
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
-      if (event.origin !== "https://apumbien.vercel.app") return;
-      
+      const allowedOrigins = [
+        "https://apumbien.vercel.app",
+        "https://pumbi.vercel.app",
+      ];
+      if (!allowedOrigins.includes(event.origin)) return;
+
       if (event.data === "trigger-print") {
         window.print();
       }
