@@ -231,7 +231,7 @@ export const resumeData = {
     "ATB Quarterly Award for Excellence",
     "P2 Energy Solutions Employee Recognition",
   ],
-  links: [{ url: "https://apumbien.vercel.app/", label: "Portfolio" }, { url: "https://github.com/Pum8i", label: "GitHub" }],
+  links: [{ url: "https://apumbien.vercel.app", label: "Portfolio" }, { url: "https://github.com/Pum8i", label: "GitHub" }],
   sideOptions: {
   },
 };

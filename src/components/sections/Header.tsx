@@ -1,4 +1,4 @@
-import { Link, Typography } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { useDeviceSize } from "src/hooks/DeviceSizeHooks";
 import CornerIcon from "src/assets/CornerIcon";
@@ -25,16 +25,32 @@ function Header({ resumeData }: { resumeData: IData }) {
           {title}
         </Typography>
         <Typography variant="body1" sx={{ textAlign: "left" }}>
-          <Link href={`mailto:${email}`} target="_blank" rel="noreferrer">
+          <Link
+            href={`mailto:${email}`}
+            target="_blank"
+            rel="noreferrer"
+            sx={{ "@media print": { display: "none" } }}
+          >
             {email}
           </Link>
+          <Box component="span" sx={{ display: "none", "@media print": { display: "inline" } }}>
+            {email}
+          </Box>
           {" | " + phone + " | " + location}
         </Typography>
 
         <Typography variant="body1" sx={{ textAlign: "left" }} gutterBottom>
-          <Link href={linkedIn} target="_blank" rel="noreferrer">
+          <Link
+            href={linkedIn}
+            target="_blank"
+            rel="noreferrer"
+            sx={{ "@media print": { display: "none" } }}
+          >
             {linkedIn}
           </Link>
+          <Box component="span" sx={{ display: "none", "@media print": { display: "inline" } }}>
+            {linkedIn}
+          </Box>
         </Typography>
       </Grid>
       {!isSmallScreen && (
